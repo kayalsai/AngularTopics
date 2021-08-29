@@ -1,1 +1,45 @@
-<h3>Angular {{title}}</h3>
+<div style="text-align:center;">
+    <h3>Welcome To Asminds Technology</h3>
+    <h3>I'm Kayalvizhi and working as a Front-end Developer</h3>
+    </div>
+    <h3>Interpolation!</h3>
+    <h3> Angular {{title}}</h3>
+    
+    <h3>Property Binding</h3>
+    <input [disabled]="isShow" type="text" Value="Angular">
+    <img [src]="imgUrl"  height="300" width="300">
+    
+    <h3>Event Binding</h3>
+    <button (click)="ok()">Submit</button>
+    {{Task}}
+    
+    <h3>Two-way Binding</h3>
+ <input type="text" [(ngModel)]="name" value="Anu">{{name}}
+<hr>
+<h3>Directives</h3>
+<div *ngIf="true">Display data</div> 
+<h3>ngIfElse example!</h3> 
+<div *ngIf="isLogIn; else isLogOut"> 
+    Hello you are logged in 
+ </div>
+ <ng-template #isLogOut> 
+    You're logged out.. 
+ </ng-template>
+ <hr>
+ <h3>NgFor Example!</h3>
+ <div *ngFor="let a of names">
+     <ul>
+     <li>{{a}}</li>
+     </ul>
+     </div>
+     <hr>
+     <h3>NgSwitch directive</h3>
+     <div [ngSwitch]="color">
+        <div *ngSwitchCase="'red'" ><h4>I'm selected the red color</h4></div>
+          <div *ngSwitchCase="'green'" ><h4>I'm selected the green color</h4></div>
+             <div *ngSwitchCase="'blue'" ><h4>I'm selected the blue color</h4></div>
+          
+        <div>
+           <hr>
+     
+     
