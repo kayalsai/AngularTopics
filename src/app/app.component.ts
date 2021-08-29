@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +16,25 @@ export class AppComponent {
   color="green";
   names=["Anu","Abi","Keerthi","Anusri","Kayal"];
   names1="Orange";//input
-
+  @ViewChild('maincontent') mainContent: any;
+   @ViewChild('subcontent') subContent: any;
 
 ok()
 {
   this.Task="Click";
 
 }
+public changeMainContent()
+    {
+      console.log("changeMainContent");
+      this.mainContent.nativeElement.setAttribute("style", "color:red");
+    }
+  
+    public changeSubContent()
+    {
+      console.log("changeSubContent");
+      this.subContent.nativeElement.setAttribute("style", "color:green");
+      this.mainContent.nativeElement.setAttribute("style", "color:red");
+    
+    }
 }
