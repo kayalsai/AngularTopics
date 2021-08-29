@@ -46,6 +46,8 @@ export class AppComponent implements OnInit{
   name: new FormControl(''),
    dept: new FormControl(''),
  });
+ 
+ 
 }
 constructor()
 {
@@ -56,6 +58,10 @@ ok()
   this.Task="Click";
 
 }
+email=new FormControl('');
+  updateEmail(){
+    this.email.setValue('kanikayal@gmail.com');
+  }
 public changeMainContent()
     {
       console.log("changeMainContent");
