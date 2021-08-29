@@ -1,6 +1,6 @@
 import { Component,OnInit,ViewChild } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
-
+import { User } from './user';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,6 +17,16 @@ export class AppComponent implements OnInit{
   color="green";
   names=["Anu","Abi","Keerthi","Anusri","Kayal"];
   names1="Orange";//input
+  users:User[]=[
+    {
+      "userId":1,
+      "userName":'User1'
+    },
+    {
+      "userId":2,
+      "userName":'User2'
+    }
+  ];
   @ViewChild('maincontent') mainContent: any;
    @ViewChild('subcontent') subContent: any;
    todayDate=new Date()

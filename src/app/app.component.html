@@ -31,6 +31,13 @@
 <h4>Attribute Directive</h4>
 <p [ngStyle]="{'color':'teal','font-size':'14px','font-family':'comic sans Ms'}">Angular is My life.</p>
 <hr>
+<h4>ngclass</h4>
+<div class="container">
+    <div *ngFor="let user of users" [ngClass]="{'highlight':user.userName=='User1'}">
+        {{user.userName}}
+    </div>
+</div>
+<hr>
  <div *ngFor="let a of names">
      <ul>
      <li>{{a}}</li>
