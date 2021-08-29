@@ -8,13 +8,15 @@ import { TestComponent } from './test/test.component';
 import { SsampleComponent } from './ssample/ssample.component';
 import { SampleService } from './sample.service';
 import { CustomdirectiveDirective } from './customdirective.directive';
+import { CustompipePipe } from './custompipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     SsampleComponent,
-    CustomdirectiveDirective
+    CustomdirectiveDirective,
+    CustompipePipe
   ],
   imports: [
     BrowserModule,
