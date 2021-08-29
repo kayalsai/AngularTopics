@@ -19,6 +19,8 @@ export class AppComponent {
   @ViewChild('maincontent') mainContent: any;
    @ViewChild('subcontent') subContent: any;
    todayDate=new Date()
+ 
+   currency="500";
 ok()
 {
   this.Task="Click";
