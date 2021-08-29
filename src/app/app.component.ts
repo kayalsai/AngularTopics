@@ -1,4 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
+import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +30,13 @@ export class AppComponent {
     {emplId:5,name:"Varsha",location:"chennai"},
 
  ];
+ profileForm!: FormGroup;
+ ngOnInit(): void{
+ this.profileForm = new FormGroup({
+  name: new FormControl(''),
+   dept: new FormControl(''),
+ });
+}
 ok()
 {
   this.Task="Click";
@@ -46,5 +54,12 @@ public changeMainContent()
       this.subContent.nativeElement.setAttribute("style", "color:green");
       this.mainContent.nativeElement.setAttribute("style", "color:red");
     
+    }
+    onSubmit()
+    {
+
+
+      console.log(this.profileForm.value);
+      
     }
 }
