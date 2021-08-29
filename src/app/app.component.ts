@@ -21,6 +21,14 @@ export class AppComponent {
    todayDate=new Date()
  
    currency="500";
+   employees:object[]=[
+    {emplId:1,name:"kani",location:"chennai"},
+    {emplId:2,name:"kayal",location:"Tvm"},
+    {emplId:3,name:"Anu",location:"vellore"},
+    {emplId:4,name:"Deekshi",location:"Bangulore"},
+    {emplId:5,name:"Varsha",location:"chennai"},
+
+ ];
 ok()
 {
   this.Task="Click";
