@@ -5,17 +5,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
+import { SsampleComponent } from './ssample/ssample.component';
+import { SampleService } from './sample.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    SsampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule
   ],
-  providers: [],
+  providers: [SampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
