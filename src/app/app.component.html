@@ -119,3 +119,10 @@ Everything will happen in a good time!..
 <input type="text" placeholder="enter ur dept" formControlName="dept">
 <button type="submit" (click)="onSubmit()">submit</button>
 </form>
+<hr>
+<h4>child component</h4>
+<h4>output</h4>
+<app-test  (childEvent)="message=$event"></app-test>
+<h4>{{message}}</h4>
+
+<hr>
