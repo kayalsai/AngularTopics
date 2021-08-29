@@ -18,7 +18,7 @@ export class AppComponent {
   names1="Orange";//input
   @ViewChild('maincontent') mainContent: any;
    @ViewChild('subcontent') subContent: any;
-
+   todayDate=new Date()
 ok()
 {
   this.Task="Click";
