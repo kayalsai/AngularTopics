@@ -1,4 +1,4 @@
-import { Component,ViewChild } from '@angular/core';
+import { Component,OnInit,ViewChild } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormGroup,FormControl } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title="Learning!";
   isShow=true;
   Task="";
@@ -36,6 +36,10 @@ export class AppComponent {
   name: new FormControl(''),
    dept: new FormControl(''),
  });
+}
+constructor()
+{
+
 }
 ok()
 {
