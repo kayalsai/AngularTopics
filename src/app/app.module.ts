@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { SsampleComponent } from './ssample/ssample.component';
 import { SampleService } from './sample.service';
+import { CustomdirectiveDirective } from './customdirective.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    SsampleComponent
+    SsampleComponent,
+    CustomdirectiveDirective
   ],
   imports: [
     BrowserModule,
