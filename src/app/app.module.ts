@@ -9,6 +9,7 @@ import { SsampleComponent } from './ssample/ssample.component';
 import { SampleService } from './sample.service';
 import { CustomdirectiveDirective } from './customdirective.directive';
 import { CustompipePipe } from './custompipe.pipe';
+import { Test2Component } from './test2/test2.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CustompipePipe } from './custompipe.pipe';
     TestComponent,
     SsampleComponent,
     CustomdirectiveDirective,
-    CustompipePipe
+    CustompipePipe,
+    Test2Component
   ],
   imports: [
     BrowserModule,

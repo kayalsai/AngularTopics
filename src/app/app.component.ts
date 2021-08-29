@@ -17,6 +17,7 @@ export class AppComponent implements OnInit{
   color="green";
   names=["Anu","Abi","Keerthi","Anusri","Kayal"];
   names1="Orange";//input
+  message="";
   users:User[]=[
     {
       "userId":1,
